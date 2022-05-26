@@ -1,0 +1,74 @@
+----------------------- LOCAL --------------------------
+
+git init		// Inicia el repositorio local
+
+git status		// estatus de los archivos (cuales estan en el stage y cuales no)
+
+git add .		// agrega todos los archivos al stage
+git add -A
+
+git commit -m "(descr)"	// hace un comit de los archivos en stage con una descripción
+
+-----------------------  REMOTO -------------------------
+
+git clone <url> . 	// clona un repositorio en local o remoto
+
+git remote add origin https://rutaRepo		// sincroniza git con github
+
+git push -u origin <branch>			// hace un push subiendo los archivos a github
+
+---------------------- Ver informacion de repo remoto ----------
+
+git remote -v		//
+
+git branch -a
+----------------------- RAMAS ---------------------------
+
+git branch nombreDeLaBranch	// Crea una nueva branch
+
+git branch			// muestra que branch hay y cual estamos trabajando
+
+git checkout nombreDeLaBranch	// cambia de branch
+
+---------------------- Fusionar Branch --------------------
+
+git branch --merged
+
+git merge <nombreDeLaBranch>	// Fusiona la branch que doy el nombre con la actual que estoy trabajando
+
+---------------------- Eliminar Branch ---------------------
+
+git branch -d nombreDeLaBranch	// Elimina la branch
+
+---------------------- Traer Cambios de Github -------------
+
+git pull origin master 
+
+
+---------------------- Cambiar de nombre a Rama --------------------
+
+    Renombra tu rama local. Si estás en la rama que quieres cambiar:
+
+git branch -m <nuevo-nombre>
+
+    Si estás en otra rama, ejecuta el comando:
+
+git branch -m <nombre-antiguo> <nuevo-nombre>
+
+    Borra el nombre antiguo y haz un push del nuevo nombre de la rama local
+
+git push origin :<nombre-antiguo> <nuevo-nombre>
+
+    Restablezcer la rama remota desde el nuevo nombre local
+
+git push origin -u new-name
+
+---------------------- Ignorar Archivos --------------------
+
+Generar un archivo .gitignore - Dentro se escribe el nombre o carpetas que se deben ignorar
+
+el L46 pasa por la Puerta
+
+---------------------- Ver commits --------------------
+
+git log
