@@ -1,2 +1,9 @@
 Super sayayin
+<<<<<<< HEAD
 Vegeta es mas poderoso!!!!
+=======
+el planeta fue destruído por Freezer
+insecto
+Krillin muere a cada rato
+g
+>>>>>>> 6740b4fb3e072a579504930d3237f5cfa63c6fdd
